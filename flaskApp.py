@@ -8,7 +8,7 @@ ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app = Flask(__name__)
 
 app.config["FILE_UPLOADS"] = UPLOAD_FOLDER
-# app.config['MAX_CONTENT_PATH'] =
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
 
 @app.route('/')
 @app.route('/index')
