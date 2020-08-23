@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}FlaskApp{% endblock %}
+<html>
+
+<head>
+    <title>flaskAPP</title>
+  </head>
+   <body>
+   	  {% block content %}
+   	  <body style = "background: url(https://cdn.downtoearth.org.in/library/large/2019-12-04/0.92334300_1575475699_17.jpg); background-size: 120% 120%; ">
+      <form action = "http://127.0.0.1:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <!-- <input type = "file" name = "file" />
+         <input type = "submit"/> -->
+         <div class="form-group" id="hed1">
+         	<label for="exampleFormControlFile1"></label>
+          	<input type="file" name ="file" class="form-control-file" id="exampleFormControlFile1">
+         </div>
+         <div class="col-auto" id="hed2">
+         	<button type="submit" class="btn btn-primary mb-2">Submit</button>
+         </div>
+
+      </form>   
+      {% endblock %}
+   </body>
+</html>
