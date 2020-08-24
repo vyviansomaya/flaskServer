@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
       h2
       {
@@ -41,7 +43,8 @@
         text-align :center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-        #hed2
+
+      #hed2, h1
       {
         top: 68%;
         left: 50%;
@@ -52,6 +55,23 @@
         padding:0;
         text-align :center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      #button1, #button2, #button3, #button4
+      {
+        position: relative;
+        top: 80%;
+        transform: translateY(200%);
+        padding: 20px;
+        font-size: 80px;
+        /*width: 30px;*/
+        text-align: center;
+        /*text-decoration: none;
+        border-radius: 90%;
+        float: left;
+*/      display: inline-block;
+
+      }
   </style>
   </head>
    <body>
@@ -72,7 +92,7 @@
                   <a class="nav-link" href="#">API</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="/contact">Contact</a>
               </li>
 
               <li class="nav-item">

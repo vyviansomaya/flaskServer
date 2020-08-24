@@ -15,6 +15,10 @@ app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
 def index():
 	return render_template("index.html")
 
+@app.route('/contact')
+def contact():
+	return render_template("contact.html")
+
 @app.route('/uploader', methods = ['Get', 'POST'])
 def uploadFile():
 	if request.method == 'POST':
@@ -22,6 +26,7 @@ def uploadFile():
 		f.save(secure_filename(f.filename))
 		return ' File was uploaded successfully'
 	return render_template("uploadFile.html")
+
 
 if __name__ == '__main__':
 	app.run(debug = True)
