@@ -3,10 +3,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
-      h2
+     h2
       {
         top:60%;
         left: 57%;
@@ -43,8 +41,7 @@
         text-align :center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-
-      #hed2, h1
+      #hed2
       {
         top: 68%;
         left: 50%;
@@ -56,22 +53,21 @@
         text-align :center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
-
-      #button1, #button2, #button3, #button4
+      #hed3
       {
-        position: relative;
-        top: 80%;
-        transform: translateY(200%);
-        padding: 20px;
-        font-size: 80px;
-        /*width: 30px;*/
-        text-align: center;
-        /*text-decoration: none;
-        border-radius: 90%;
-        float: left;
-*/      display: inline-block;
-
-      }
+        top: 85%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-55%) translateY(-50%);
+        font-size: 0.5em;
+        margin:0;
+        padding:0;
+        width: 700px;
+        height: 150px;
+        text-align :center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: whitesmoke;
+      } 
   </style>
   </head>
    <body>
@@ -87,16 +83,6 @@
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="/uploader">File Uploader</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">API</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/contact">Contact</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
           </ul>
         </div>
